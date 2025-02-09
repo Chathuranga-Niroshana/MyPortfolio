@@ -46,7 +46,7 @@ const Hero = () => {
                             }}
                             whileTap={{ scale: 0.9 }}
                             className=" cursor-pointer bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
-                            Full Stack Developer
+                            Software Engineer
                         </motion.span>
 
                         <motion.button
