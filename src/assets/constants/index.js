@@ -20,7 +20,7 @@ export const EXPERIENCES = [
     technologies: ["Javascript", "React.js", "Node.js", "React native", "MongoDB", "MySQL", "Flutter", "Rust", "Python", "Figma"],
   },
   {
-    year: "2024-May - Present",
+    year: "2024-May - 2025-January",
     role: "Junior Full Stack Developer",
     company: "Future Planet (PVT) LTD",
     description: `Contributed to the team in developing and maintaining web applications and mobile applications using JavaScript, Next.js, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB and MySQL databases. Assisted in the development, debugging, and deployment of various features, collaborating with teams to implement best practices in software development`,
