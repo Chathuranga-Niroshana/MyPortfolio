@@ -11,6 +11,7 @@ import { FaPhp } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa6";
 import { TbBrandRedux } from "react-icons/tb";
 import { RiTailwindCssLine } from "react-icons/ri";
+import { FaVuejs } from "react-icons/fa6";
 import { motion } from "motion/react";
 
 const iconVarients = (duration) => ({
@@ -88,6 +89,19 @@ const Technologies = () => {
 
                     className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
                     <TbBrandNextjs className="text-7xl text-neutral-900" /> {/* Next.js - Neutral Black */}
+                </motion.div>
+                 <motion.div
+                    variants={iconVarients(1.05)}
+                    initial="initial"
+                    animate="animate"
+                    whileHover={{
+                        scale: 1.2,
+                        transition: { duration: 1 },
+                    }}
+                    whileTap={{ scale: 0.9 }}
+
+                    className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
+                    <FaVuejs className="text-7xl text-[#44b683]" /> {/* Vue.js - green */}
                 </motion.div>
                 <motion.div
                     variants={iconVarients(1.5)}
