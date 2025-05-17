@@ -18,29 +18,30 @@ import { SiThreedotjs } from "react-icons/si";
 import { motion } from "motion/react";
 import { useState } from "react";
 
+// Define technology names and glow colors
 const techData = [
-  { icon: RiReactjsLine, name: "React", color: "cyan", glowColor: "cyan" },
-  { icon: FaNodeJs, name: "Node.js", color: "green-500", glowColor: "green" },
-  { icon: SiMongodb, name: "MongoDB", color: "green-600", glowColor: "green" },
-  { icon: TbBrandNextjs, name: "Next.js", color: "neutral-900", glowColor: "white" }, 
-  { icon: FaVuejs, name: "Vue.js", color: "[#44b683]", glowColor: "emerald" },
-  { icon: SiVite, name: "Vite", color: "[#ffab03]", glowColor: "amber" },
-  { icon: SiExpo, name: "Expo", color: "[#ffffff]", glowColor: "white" },
-  { icon: FaPython, name: "Python", color: "yellow-400", glowColor: "yellow" },
-  { icon: SiExpress, name: "Express.js", color: "gray-400", glowColor: "gray" },
-  { icon: RiTailwindCssLine, name: "Tailwind CSS", color: "blue-400", glowColor: "blue" },
-  { icon: SiMysql, name: "MySQL", color: "blue-500", glowColor: "blue" },
-  { icon: SiJavascript, name: "JavaScript", color: "yellow-500", glowColor: "yellow" },
-  { icon: SiTypescript, name: "TypeScript", color: "blue-600", glowColor: "blue" },
-  { icon: FaPhp, name: "PHP", color: "indigo-600", glowColor: "indigo" },
-  { icon: FaBootstrap, name: "Bootstrap", color: "purple-600", glowColor: "purple" },
-  { icon: SiThreedotjs, name: "Three.js", color: "white", glowColor: "white" },
-  { icon: TbBrandRedux, name: "Redux", color: "violet-600", glowColor: "violet" },
-  { icon: FaJava, name: "Java", color: "red-600", glowColor: "red" },
-  { icon: SiFigma, name: "Figma", color: "pink-600", glowColor: "pink" },
-  { icon: SiSpringboot, name: "Spring Boot", color: "green-500", glowColor: "green" },
-  { icon: FaHtml5, name: "HTML", color: "orange-500", glowColor: "orange" },
-  { icon: FaCss3Alt, name: "CSS", color: "blue-500", glowColor: "blue" },
+  { icon: RiReactjsLine, name: "React", color: "#61DAFB", glowColor: "cyan" },
+  { icon: FaNodeJs, name: "Node.js", color: "#539E43", glowColor: "green" },
+  { icon: SiMongodb, name: "MongoDB", color: "#4DB33D", glowColor: "green" },
+  { icon: TbBrandNextjs, name: "Next.js", color: "#000000", glowColor: "white" },
+  { icon: FaVuejs, name: "Vue.js", color: "#44b683", glowColor: "emerald" },
+  { icon: SiVite, name: "Vite", color: "#ffab03", glowColor: "amber" },
+  { icon: SiExpo, name: "Expo", color: "#ffffff", glowColor: "white" },
+  { icon: FaPython, name: "Python", color: "#FFD43B", glowColor: "yellow" },
+  { icon: SiExpress, name: "Express.js", color: "#A0A0A0", glowColor: "gray" },
+  { icon: RiTailwindCssLine, name: "Tailwind CSS", color: "#38BDF8", glowColor: "blue" },
+  { icon: SiMysql, name: "MySQL", color: "#3E6E93", glowColor: "blue" },
+  { icon: SiJavascript, name: "JavaScript", color: "#F7DF1E", glowColor: "yellow" },
+  { icon: SiTypescript, name: "TypeScript", color: "#3178C6", glowColor: "blue" },
+  { icon: FaPhp, name: "PHP", color: "#777BB4", glowColor: "indigo" },
+  { icon: FaBootstrap, name: "Bootstrap", color: "#7952B3", glowColor: "purple" },
+  { icon: SiThreedotjs, name: "Three.js", color: "#ffffff", glowColor: "white" },
+  { icon: TbBrandRedux, name: "Redux", color: "#764ABC", glowColor: "violet" },
+  { icon: FaJava, name: "Java", color: "#E76F00", glowColor: "red" },
+  { icon: SiFigma, name: "Figma", color: "#F24E1E", glowColor: "pink" },
+  { icon: SiSpringboot, name: "Spring Boot", color: "#6DB33F", glowColor: "green" },
+  { icon: FaHtml5, name: "HTML", color: "#E34F26", glowColor: "orange" },
+  { icon: FaCss3Alt, name: "CSS", color: "#1572B6", glowColor: "blue" },
 ];
 
 const iconVariants = (duration) => ({
@@ -56,6 +57,7 @@ const iconVariants = (duration) => ({
   },
 });
 
+// Animated neon border effect
 const neonBorderVariants = {
   initial: { 
     boxShadow: "0 0 0px rgba(255, 255, 255, 0)" 
@@ -77,6 +79,7 @@ const neonBorderVariants = {
   })
 };
 
+// Function to get appropriate CSS color values
 function getGlowColor(color) {
   const colorMap = {
     cyan: "rgba(34, 211, 238, 0.8)",
@@ -122,16 +125,18 @@ const TechIcon = ({ Icon, name, color, glowColor, delay }) => {
           initial="initial"
           animate={isHovered ? "hover" : "initial"}
           custom={glowColor}
-          className={`rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 backdrop-blur-sm bg-neutral-900/70`}
+          className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 backdrop-blur-sm bg-neutral-900/70"
         >
-          <Icon className={`text-7xl text-${color}`} />
+          <Icon className="text-7xl" style={{ color: color }} />
         </motion.div>
         
+        {/* Technology name tooltip */}
         <motion.div
           initial={{ opacity: 0, y: 10, scale: 0.8 }}
           animate={isHovered ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 10, scale: 0.8 }}
           transition={{ duration: 0.2 }}
-          className={`absolute -bottom-12 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-neutral-800 text-${color} rounded-lg font-bold text-lg whitespace-nowrap z-10 before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-45 before:w-4 before:h-4 before:bg-neutral-800`}
+          style={{ color: color }}
+          className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-neutral-800 rounded-lg font-bold text-lg whitespace-nowrap z-10 before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-45 before:w-4 before:h-4 before:bg-neutral-800"
         >
           {name}
         </motion.div>
@@ -143,6 +148,7 @@ const TechIcon = ({ Icon, name, color, glowColor, delay }) => {
 const Technologies = () => {
   return (
     <div className="border-b border-neutral-800 pb-32 relative overflow-hidden">
+      {/* Background gradient effects */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-6xl">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-purple-500/10 blur-3xl"></div>
         <div className="absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-blue-500/10 blur-3xl"></div>
@@ -162,7 +168,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-12 max-w-6xl mx-auto relative z-10"
+        className="flex flex-wrap items-center justify-center gap-8 max-w-6xl mx-auto relative z-10"
       >
         {techData.map((tech, index) => (
           <TechIcon
