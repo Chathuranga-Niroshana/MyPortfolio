@@ -12,6 +12,9 @@ import { FaBootstrap } from "react-icons/fa6";
 import { TbBrandRedux } from "react-icons/tb";
 import { RiTailwindCssLine } from "react-icons/ri";
 import { FaVuejs } from "react-icons/fa6";
+import { SiVite } from "react-icons/si";
+import { SiExpo } from "react-icons/si";
+import { SiThreedotjs } from "react-icons/si";
 import { motion } from "motion/react";
 
 const iconVarients = (duration) => ({
@@ -102,6 +105,32 @@ const Technologies = () => {
 
                     className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
                     <FaVuejs className="text-7xl text-[#44b683]" /> {/* Vue.js - green */}
+                </motion.div>
+                <motion.div
+                    variants={iconVarients(1.15)}
+                    initial="initial"
+                    animate="animate"
+                    whileHover={{
+                        scale: 1.2,
+                        transition: { duration: 1 },
+                    }}
+                    whileTap={{ scale: 0.9 }}
+
+                    className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
+                    <SiVite className="text-7xl text-[#ffab03]" /> {/* Vite.js - yellow */}
+                </motion.div>
+                <motion.div
+                    variants={iconVarients(0.95)}
+                    initial="initial"
+                    animate="animate"
+                    whileHover={{
+                        scale: 1.2,
+                        transition: { duration: 1 },
+                    }}
+                    whileTap={{ scale: 0.9 }}
+
+                    className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
+                    <SiVite className="text-7xl text-[#ffffff]" /> {/* expo - white */}
                 </motion.div>
                 <motion.div
                     variants={iconVarients(1.5)}
@@ -206,6 +235,19 @@ const Technologies = () => {
 
                     className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
                     <FaBootstrap className="text-7xl text-purple-600" /> {/* Bootstrap - Purple */}
+                </motion.div>
+                 <motion.div
+                    variants={iconVarients(1.0)}
+                    initial="initial"
+                    animate="animate"
+                    whileHover={{
+                        scale: 1.2,
+                        transition: { duration: 1 },
+                    }}
+                    whileTap={{ scale: 0.9 }}
+
+                    className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
+                    <FaBootstrap className="text-7xl text-black" /> {/* three js - black */}
                 </motion.div>
                 <motion.div
                     variants={iconVarients(0.75)}
