@@ -79,7 +79,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Kaduwela Road, Malabe, Sri Lanka",
+  address: "Malabe, Sri Lanka",
   phoneNo: "+94756261513 ",
   email: "niroshana.c.n.j@gmail.com",
 };
