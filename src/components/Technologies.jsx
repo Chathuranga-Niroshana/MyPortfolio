@@ -136,7 +136,7 @@ const TechIcon = ({ Icon, name, color, glowColor, delay }) => {
           animate={isHovered ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 10, scale: 0.8 }}
           transition={{ duration: 0.2 }}
           style={{ color: color }}
-          className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-neutral-800 rounded-lg font-bold text-lg whitespace-nowrap z-10 before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-45 before:w-4 before:h-4 before:bg-neutral-800"
+          className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-neutral-800 rounded-lg font-bold text-lg whitespace-nowrap z-9999 before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-45 before:w-4 before:h-4 before:bg-neutral-800"
         >
           {name}
         </motion.div>
