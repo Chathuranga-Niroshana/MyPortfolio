@@ -17,7 +17,7 @@ export const EXPERIENCES = [
     role: "Software Engineer",
     company: "Soft Vision Technologies (PVT) LTD",
     description: `Developing, designing and project managing softwares such as web applications, mobile applications, desktop applications and participating in the software development process using React Native, Flutter, Python JavaScript, Next.js, React.js, Node.js and other software development languages and frameworks. Assist in the development, debugging, and deployment of various features, Leading and collaborating with teams to implement best practices in software development`,
-    technologies: ["JavaScript", "React.js", "Node.js", "Express.js", "React native", "MongoDB", "MySQL", "Flutter", "Rust", "Python", "Figma"],
+    technologies: ["JavaScript", "React.js", "Node.js", "Express.js", "React native", "MongoDB", "MySQL", "Flutter", "Rust", "Python", "Figma", "TypeScript", "Vue.js", "Jira", "Vite.js" , "Redux", "Zustand"],
   },
   {
     year: "2024-May - 2025-January",
