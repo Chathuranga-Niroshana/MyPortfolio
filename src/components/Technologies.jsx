@@ -22,7 +22,7 @@ const techData = [
   { icon: RiReactjsLine, name: "React", color: "cyan", glowColor: "cyan" },
   { icon: FaNodeJs, name: "Node.js", color: "green-500", glowColor: "green" },
   { icon: SiMongodb, name: "MongoDB", color: "green-600", glowColor: "green" },
-  { icon: TbBrandNextjs, name: "Next.js", color: "neutral-900", glowColor: "white" },
+  { icon: TbBrandNextjs, name: "Next.js", color: "neutral-900", glowColor: "white" }, 
   { icon: FaVuejs, name: "Vue.js", color: "[#44b683]", glowColor: "emerald" },
   { icon: SiVite, name: "Vite", color: "[#ffab03]", glowColor: "amber" },
   { icon: SiExpo, name: "Expo", color: "[#ffffff]", glowColor: "white" },
