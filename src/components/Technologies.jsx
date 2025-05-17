@@ -130,7 +130,7 @@ const Technologies = () => {
                     whileTap={{ scale: 0.9 }}
 
                     className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
-                    <SiVite className="text-7xl text-[#ffffff]" /> {/* expo - white */}
+                    <SiExpo className="text-7xl text-[#ffffff]" /> {/* expo - white */}
                 </motion.div>
                 <motion.div
                     variants={iconVarients(1.5)}
@@ -247,7 +247,7 @@ const Technologies = () => {
                     whileTap={{ scale: 0.9 }}
 
                     className="rounded-2xl cursor-pointer border-4 border-neutral-800 p-4 ">
-                    <FaBootstrap className="text-7xl text-black" /> {/* three js - black */}
+                    <SiThreedotjs className="text-7xl text-white" /> {/* three js - black */}
                 </motion.div>
                 <motion.div
                     variants={iconVarients(0.75)}
